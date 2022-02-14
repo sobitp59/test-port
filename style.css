@@ -228,6 +228,7 @@
     background-color: transparent; 
 }
 
+
 .p-button2 a{
     text-decoration: none;
     color: var(--primary-color);
@@ -429,10 +430,12 @@
 
 @media (max-width : 590px){
     .sec-head{
-        /* text-align: center; */
         padding-top: 1.4rem;
-        /* margin-top: 2rem; */
-        /* font-size: 1.5rem; */
     }
 
 }
+
+
+/* --------- BLOGS STYLING START ------------ */
+
+/* -------------- BLOGS STYLING END ------------------*/
