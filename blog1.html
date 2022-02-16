@@ -47,7 +47,45 @@
                          <p class="blog-detail">In Code Component, our code gets executed line by line in a specific order. We will understand it more deeply when we will talk about the phases that occur when we run our code. But for now, just keep in mind that when we run our code, an Execution Context is created and it has two components - memory and code component.</p>    
                          <img class="blog-header-image" src="blogimages/blog-img-1.png" alt="header-img" srcset="">
 
-                            
+
+                         <!-- What after the Execution Context? -->
+                         <h4 class="blog-topics">what after the execution context<span class="blog-topics-dot">?</span></h4>
+                         <p class="blog-detail">So far we know that when we run our code an Execution Context is created. Now, our code has to go through two beautiful phases and these phases are - </p>    
+                         <h5 class="blog-topics-ex">phase 1 : memory creation phase<span class="blog-topics-dot">.</span></h5>
+                         <p class="blog-detail">In this phase, our codes get scanned and all the variables are assigned with a value of undefined but in the case of function, it stores the whole code inside that function name. We will understand it later with the help of an example.</p>    
+                         <h5 class="blog-topics-ex">phase 2 : code execution phase<span class="blog-topics-dot">.</span></h5>
+                         <p class="blog-detail">In this phase, our codes run line by line in a specific order, and all the actual values of the variable get replaced by undefined which was held earlier as a placeholder.</p>    
+                         
+                         
+                         <!-- EXAMPLE: Understanding Execution Context with the help of an example -->
+                         <h4 class="blog-topics">example : understanding execution context with the help of an example<span class="blog-topics-dot">.</span></h4>
+                         <p class="blog-detail">I know it might be a little overwhelming, but don't worry let's understand the whole concept with the help of an example. Suppose this is the code we want to execute.</p>    
+                             <ul class="blog-code-head">
+                                 <li class="blog-code-line"><span class="code-col">var</span> a = 7;</li>
+                                 <li class="blog-code-line"><span class="code-col">function</span> cube(n){</li>
+                                    <li class="blog-code-line"><span class="code-col">var</span> b = n*n*n;</li>
+                                    <li class="blog-code-line"><span class="code-col">return</span> b;</li>
+                                    <li class="blog-code-line">}</li>
+                                    <li class="blog-code-line"><span class="code-col">var</span> c = cube(a);</li>
+                                </ul>
+                        <p class="blog-detail">Now when we run this code an Execution Context is created and inside the Execution Context it has to go through two phases - MEMORY CREATION PHASE and CODE EXECUTION PHASE. First, it will go through Memory Creation Phase and assign the memory to all the variables. It will assign undefined to variable a and c and also it will assign the whole code inside function cube to cube.</p>    
+                        <img class="blog-header-image" src="blogimages/blog-img-2.png" alt="header-img" srcset="">
+                        <p class="blog-detail">Now, here comes the Second Phase i.e. the Code Execution Phase. In this phase, our code will run line by line. So, when it goes to the first line, it will assign 7 to variable a. Now, it will move to the next line and founds that there is nothing to execute so it will jump to the sixth line. Now, the sixth line is invoking the function cube with parameter a which holds the value 7. Now, when a new function is invoked, another execution context is created inside the previous one and again it will follow the same procedure.</p>    
+                        <img class="blog-header-image" src="blogimages/blog-img-3.png" alt="header-img" srcset="">
+                        <p class="blog-detail">Now in this execution context (i.e. the execution context inside the Global Execution Context), again it has to go through Memory Creation Phase and Code Execution Phase. In Memory Creation Phase, it will assign undefined to variables n and b. Now, it will move to the next phase i.e. the Code Execution Phase. In this phase, variable n will be assigned with value a because it was the parameter of the function cube with variable c, now a will be replaced by 7 which is taken from the Global Execution Context. Now finally the output of variable b i.e 343 will be returned to variable c in the Global Execution Context. Now after that, firstly the Local Execution Context will be deleted and after returning the value of variable c, the Global Execution Context will be deleted.</p>    
+                        <img class="blog-header-image" src="blogimages/blog-img-4.png" alt="header-img" srcset="">
+                        <p class="blog-detail">Now, if you are wondering how JavaScript handles all this, I mean this is a lot. Suppose if we invoke a function inside another function and again inside another function, a number of 'Execution Context' will be created, but all this handles by JavaScript very beautifully. So how does it happen? Ladies and Gentlemen, give a big round of applauding to none other than our very dear CALLSTACK.</p>    
+    
+
+                        <!-- CallStack: The Game Changer -->
+                        <h4 class="blog-topics">callstack: the game changer<span class="blog-topics-dot">.</span></h4>
+                        <img class="blog-header-image" src="blogimages/blog-img-5.png" alt="header-img" srcset="">
+                        <p class="blog-detail">We know that JavaScript is a synchronous single-threaded programming language and thus it has only one CALLSTACK which means that it can perform only one command at a time in a specific order. So, what basically CALLSTACK does do?</p>    
+                        <p class="blog-detail">CALLSTACK maintains the order of execution of EXECUTION CONTEXT which means that when we run our code the global execution context that is created at first will be pushed to the stack first and again if another function is invoked/called, it will be pushed at the top of CALLSTACK and again if another function is invoked it will be pushed to the top. Now when the task of the function at the top is completed it will be removed from the stack and at the end, the Global Execution Context is deleted.</p>    
+                        <p class="blog-detail">This is how it looks Behind The Scene of JavaScript. Isn't it amazing? If you are reading till here, thank you so much for that, I appreciate it. Till then, see you in the next blog.</p>    
+
+                        
+
                     </div>
                </article> 
             </div>

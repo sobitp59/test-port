@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 
 :root{
 --div-margin : 0 6rem;
@@ -484,17 +485,38 @@
 .blog-topics-ex{
     color: var(--primary-color);
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 1rem 0;
 }
 
 .blog-detail{
     color: var(--primary-color);
     line-height:1.6rem;
+    margin-top: 1.5rem;
 }
 
 .blog-detail-ex{
     margin: 1rem 0;
 }
 
+.blog-code-head{
+    margin: 2rem 0;
+}
+.blog-code-head{
+    background-color: var(--primary-color);
+    list-style: none;
+    padding: 1.5rem;
+    border-radius: 0.7rem;
+    line-height: 1.6rem;
+}
+
+.blog-code-line{
+    /* color: var(--active-color); */
+    color: white;
+}
+.blog-code-line .code-col{
+    font-family: 'Fira Code', monospace;
+    font-weight: 400;
+    color: #00ffb7;
+}
 /* -------------- BLOGS STYLING END ------------------*/
