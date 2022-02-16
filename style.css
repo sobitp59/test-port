@@ -539,6 +539,10 @@
         border-radius: 0.5rem;
     }
 
+    .blog{
+        margin: 0 0.3rem;
+    }
+
     .blog-intro{
         padding: 0 0.05rem;
         /* background-color: red; */
