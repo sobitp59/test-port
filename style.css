@@ -529,6 +529,35 @@
  .blog-bold{
     font-weight: 600;
 }
+
+/* ----------- BlogPage Media Query -------------- */
+@media (max-width : 478px){
+
+    .blog-header-image{
+        margin: 1rem;
+        /* margin: auto;  */
+        border-radius: 0.5rem;
+    }
+
+    .blog-intro{
+        padding: 0 0.05rem;
+        /* background-color: red; */
+    }
+
+    .blog-header-intro{
+        font-size: 1.6rem;
+    }
+
+    .sm{
+        font-size: 0.7rem;
+    }
+
+    .blog-topics{
+        font-size: 1.5rem;
+    }
+
+    .blog-topics-ex{
+        font-size: 1rem;
+    }
+}
 /* -------------- BLOGS STYLING END ------------------*/
-/* <span class="blog-bold"></span> */
-/* <span class="blog-bg"></span> */
