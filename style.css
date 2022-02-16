@@ -438,9 +438,9 @@
 
 
 /* --------- BLOGS STYLING START ------------ */
-.blog-header{
+/* .blog-header{
     padding-bottom: var(--padding-bottom);
-}
+} */
 .blog-header-image{
     max-width: 90%;
     width: 900px;
