@@ -20,16 +20,35 @@
         </nav>
 
         <!-- Header -->
-        <header class="header">
-            <img class="heroImage" src="blogimages/JavaScript-Behind-The-Scene-Banner.png" alt="header-img" srcset="">
+        <header class="blog-header">
+            <img class="blog-header-image" src="blogimages/JavaScript-Behind-The-Scene-Banner.png" alt="header-img" srcset="">
             
-            <div class="header-intro">
-                <h2 class="header-intro-middle">javascript : behind the scene<span class="header-dot">.</span></h2><br>
-               <article class="project-list">
-                   <small>14 February, 2022 | Sobit Prasad</small>
+            <div class="blog-intro">
+                <h2 class="blog-header-intro">javascript : behind the scene<span class="blog-header-dot">.</span></h2><br>
+                <p class="sm">14 February, 2022 | Sobit Prasad</p>
+                <article class="blog-blog">
                    <div class="blog">
+                       <!-- introduction -->
+                        <h4 class="blog-topics">introduction<span class="blog-topics-dot">.</span></h4>
+                        <p class="blog-detail">I think we all like to watch BTS(Behind The Scene), whether it is a BTS of a movie or it could be BTS of your favorite show. But have you ever imagined if we could watch behind the scene of a programming language?
+                            Yes, you heard it right we can see BTS of a programming language. So in this blog, we will see how javascript actually works behind the scene?</p>
+                  
+                        <!-- what happens when we run our JavaScript program? -->
+                        <h4 class="blog-topics">what happens when we run our JavaScript program<span class="blog-topics-dot">?</span></h4>
+                        <p class="blog-detail">So when you run your beautiful code in JavaScript, an Execution Context is created. So if you are wondering what the heck is this Execution Context, you can think it of like the movie set where all the shots of the movies are to be taken. So everything in JavaScript happens inside this Execution Context.</p>    
+                        <p class="blog-detail blog-detail-ex">In the Execution Context, there are two main components. </p>    
+                        <p class="blog-detail blog-detail-ex">
+                            I.  Memory Component (also known as Variable Environment) <br>
+                            II. Code Component (also known as Thread of Execution)
+                         </p> 
+                         <h5 class="blog-topics-ex">memory component<span class="blog-topics-dot">.</span></h5>
+                         <p class="blog-detail">In Memory Component, all the values of the variables are assigned in a key-value pair as simple as that.</p>    
+                         <h5 class="blog-topics-ex">code component<span class="blog-topics-dot">.</span></h5>
+                         <p class="blog-detail">In Code Component, our code gets executed line by line in a specific order. We will understand it more deeply when we will talk about the phases that occur when we run our code. But for now, just keep in mind that when we run our code, an Execution Context is created and it has two components - memory and code component.</p>    
+                         <img class="blog-header-image" src="blogimages/blog-img-1.png" alt="header-img" srcset="">
 
-                   </div>
+                            
+                    </div>
                </article> 
             </div>
         </header>

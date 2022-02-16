@@ -437,5 +437,64 @@
 
 
 /* --------- BLOGS STYLING START ------------ */
+.blog-header{
+    padding-bottom: var(--padding-bottom);
+}
+.blog-header-image{
+    max-width: 90%;
+    width: 900px;
+    display: block;
+    margin: auto;
+    margin-top: 3rem; 
+    margin-bottom: 1rem;
+     border-radius: 0.7rem;
+}
+
+.blog-header-intro{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-top: 2rem;
+}
+
+.blog-header-dot{
+    color: var(--active-color);
+}
+.blog-intro .sm{
+    color: #112240;
+    text-align: center;
+    margin-top: 0;
+}
+
+.blog-blog{
+    margin: 1rem 4rem;
+}
+
+.blog-topics{
+    color: var(--primary-color);
+    text-align: left;
+    font-size: 2rem;
+    margin: 1.5rem 0;
+}
+
+.blog-topics-dot{
+    color: var(--active-color);  
+}
+
+.blog-topics-ex{
+    color: var(--primary-color);
+    text-align: left;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.blog-detail{
+    color: var(--primary-color);
+    line-height:1.6rem;
+}
+
+.blog-detail-ex{
+    margin: 1rem 0;
+}
 
 /* -------------- BLOGS STYLING END ------------------*/
