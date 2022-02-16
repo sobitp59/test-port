@@ -519,4 +519,16 @@
     font-weight: 400;
     color: #00ffb7;
 }
+
+.blog-bg{
+    background-color: #b3ffe981;
+    border-radius: 0.3rem;
+    padding: 0.12rem;
+}
+
+ .blog-bold{
+    font-weight: 600;
+}
 /* -------------- BLOGS STYLING END ------------------*/
+/* <span class="blog-bold"></span> */
+/* <span class="blog-bg"></span> */
