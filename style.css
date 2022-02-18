@@ -540,6 +540,11 @@
     font-weight: 600;
 }
 
+.prev-blog{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+}
 
 
 .blog-detail-ex{
