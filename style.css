@@ -522,6 +522,7 @@
 .blog-code-line{
     /* color: var(--active-color); */
     color: white;
+    font-family: 'Fira Code', monospace;
 }
 .blog-code-line .code-col{
     font-family: 'Fira Code', monospace;
