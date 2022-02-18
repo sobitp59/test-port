@@ -539,6 +539,13 @@
     font-weight: 600;
 }
 
+
+
+.blog-detail-ex{
+    font-style: italic;
+    /* border-left: 3px solid var(--primary-color); */
+}
+
 /* ----------- BlogPage Media Query -------------- */
 @media (max-width : 478px){
 
