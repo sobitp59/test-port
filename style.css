@@ -341,7 +341,11 @@
     .p-btn{
         margin-top: 1.5rem;
     }
-    
+    .p-button-mobile{
+        margin-top: 1.5rem;
+
+    }
+
     .header-intro-bottom{
         margin: 0 0.35rem;
         text-align: start;
