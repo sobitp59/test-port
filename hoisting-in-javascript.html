@@ -95,7 +95,7 @@
                             <li class="blog-code-line"><span class="code-col">function</span> funcOne(){</li>
                                 <li class="blog-code-line"><span class="code-col">console</span>.log('function one');</li>
                                 <li class="blog-code-line">}</li>
-                                <li class="blog-code-line"><span class="code-col">// Output : function one</span></li>
+                                <li class="blog-code-line"><span class="code-col">//Output : function one</span></li>
                         </ul>
                         <p class="blog-detail">What will be the output? Again, it's very simple, Right? We have used functions like it before so many times. But how does it possible to access a function even before declaring it. Have you remembered the last line of the second paragraph? So here is the answer, because in the case of functions, in Memory Creation Phase, JS Engine allocates the memory and the whole code inside that function as the value. Now when this function is invoked before or after the declaration of that function an Execution Context is created and in Memory Creation Phase inside this Execution Context, it will simply print the <span class="blog-bold blog-bg">function one</span> in the console and after that, this Execution Context will be deleted and the control will be transferred to Global Execution Context. Now if don't understand yet, just simply copy and paste the below code and open the console, you will find your answer.</p>    
                         <ul class="blog-code-head">
