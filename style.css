@@ -80,6 +80,7 @@
 
 .link:hover{
     background-color: #ffffff18;
+    transition: 0.5s ease all;
 
 
 }
@@ -216,10 +217,18 @@
     /* color: var(--primary-color); */
     color: white;
 }
+.p-button:hover{
+    border : 2px solid #00338b7c;
+    transition: 1s ease all;
+}
+.p-button2:hover{
+    border: 2px solid var(--primary-color);
+    transition: 0.5s ease all;
+}
 
 .p-button2{
     padding: 0.9rem;
-    border: 2px solid var(--primary-color);
+    border: 1px solid var(--primary-color);
     /* border: none;
     margin-top: 1rem;
     border-radius: 1rem;*/
@@ -289,6 +298,7 @@
 
 .social-link:hover{
     background-color: #ffffff18;
+    transition: 0.5s ease all;
     /* background-color: #ffffff28; */
 
 }
